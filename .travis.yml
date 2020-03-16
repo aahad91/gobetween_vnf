@@ -7,7 +7,7 @@ addons:
 env:
   - LIBGUESTFS_BACKEND=direct
 before_script:
-  - sudo chmod +x vm-images/gobetween/descriptor.sh
+  - sudo chmod +x vm-image/gobetween/descriptor.sh
 script:
   - cd vm-image/gobetween/
   - sudo ./descriptor.sh
