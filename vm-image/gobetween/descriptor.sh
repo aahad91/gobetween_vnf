@@ -30,7 +30,7 @@ virt-customize -a xenial-server-cloudimg-amd64-disk1.img \
                       python-yaml \
                       python3 \
                       python3-pip' \
-      --run-command  'sudo snap install gobetween --edge' \
+      --run-command  'sudo snap install -y gobetween --edge' \
       --run-command 'echo "manage_etc_hosts: true" >> /etc/cloud/cloud.cfg' \
       --run-command 'cd /' \
       --upload gobetween.toml:/etc/gobetween/conf/gobetween.toml \
