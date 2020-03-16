@@ -1,0 +1,15 @@
+sudo: required
+addons:
+  apt:
+    packages:
+    - libguestfs-tools
+    - wget
+env:
+  - LIBGUESTFS_BACKEND=direct
+before_script:
+  - sudo chmod +x vm-images/gobetween/descriptor.sh
+script:
+  - cd vm-images/gobetween/
+  - sudo ./descriptor.sh
+after_script:
+  - echo "Build success"
