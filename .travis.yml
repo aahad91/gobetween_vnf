@@ -9,7 +9,7 @@ env:
 before_script:
   - sudo chmod +x vm-images/gobetween/descriptor.sh
 script:
-  - cd vm-images/gobetween/
+  - cd vm-image/gobetween/
   - sudo ./descriptor.sh
 after_script:
   - echo "Build success"
